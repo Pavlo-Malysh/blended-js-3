@@ -139,3 +139,50 @@ function findNumber(start, end, divisor) {
     }
 }
 
+
+// Task 7 Завдання gpt
+
+function getDiscount(day) {
+    switch (day) {
+        case "Monday":
+            return 10;
+        case "Wednesday":
+            return 20;
+        case "Friday":
+            return 30;
+        default:
+            alert("No discount")
+            return 0;
+    }
+}
+
+console.log(getDiscount("Friday"));
+
+
+// Task 8
+
+function getMessage(isMember) {
+    const message = isMember === true ? "Welcome, member" : "Please sign up!"
+    return message;
+}
+
+function getMessage_2(isMember) {
+    return isMember ? "Welcome, member" : "Please sign up!"
+}
+
+console.log(getMessage(false));
+console.log(getMessage_2(true));
+
+
+// Task 9
+
+function formatString(str) {
+    let string = str.trim().toLowerCase()
+    if (string.includes("javascript")) {
+        return `Found ${string}!`
+    } else {
+        return "Not found!"
+    }
+}
+
+console.log(formatString("    JaVAScript   "));
