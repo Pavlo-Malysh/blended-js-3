@@ -139,4 +139,103 @@ function calculateTotalPrice(productName) {
     return `Product ${productName} not found!`
 }
 
-console.log(calculateTotalPrice("Radar"));
+// console.log(calculateTotalPrice("Radar"));
+
+
+// -------------------------------------------------------------------------------------------------------
+
+
+const atTheOldToad = {
+    potions: [
+        { name: "Speed potion", price: 460 },
+        { name: "Stone skin", price: 520 },
+    ],
+    getPotions() {
+        return this.potions;
+    },
+    addPotion(newPotion) {
+        this.potions.push(newPotion);
+    },
+    getTotalPrice() {
+        let totalPrice = 0;
+        for (const potion of this.potions) {
+            totalPrice += potion.price
+        }
+        return totalPrice
+    },
+};
+
+// console.log(atTheOldToad.getTotalPrice());
+
+
+// -------------------------------------------------------------------------------------------------------
+
+const atTheOldToad2 = {
+    potions: [
+        { name: "Speed potion", price: 460 },
+        { name: "Stone skin", price: 520 },
+    ],
+    getPotions() {
+        return this.potions;
+    },
+    updatePotionName(oldName, newName) {
+        for (const potion of this.potions) {
+            if (potion.name === oldName) {
+                potion.name = newName;
+            }
+        }
+    },
+};
+
+
+// console.log(atTheOldToad2.updatePotionName("Stone skin", "New Value"));
+// console.log(atTheOldToad2.potions);
+
+
+
+// -------------------------------------------------------------------------------------------------------
+
+function addOverNum(value, ...args) {
+    let sum = 0;
+    for (const arg of args) {
+        if (arg > value) {
+            sum += arg;
+        }
+    }
+    return sum
+}
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+
+
+
+// -------------------------------------------------------------------------------------------------------
+
+const firstGroupScores = [64, 42, 93];
+const secondGroupScores = [89, 14, 51, 26];
+const thirdGroupScores = [29, 47, 18, 97, 81];
+
+const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+const bestScore = Math.max(...allScores);
+const worstScore = Math.min(...allScores);
+
+
+// console.log(bestScore, worstScore);
+
+
+// -------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+// -------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+// -------------------------------------------------------------------------------------------------------
