@@ -92,7 +92,7 @@ function checkStorage(storage, item) {
     }
 }
 
-console.log(checkStorage(["apple", "plum", "pear"], "pLuM"));
+// console.log(checkStorage(["apple", "plum", "pear"], "pLuM"));
 
 
 // Виклик функції `checkStorage(["apple", "plum", "pear"], "pLuM")` повертає`plum is available to order!`
@@ -127,9 +127,6 @@ function getCommonElements(array1, array2) {
 
 
 // ---------------------------------------------------------------------------------------------------------------------
-
-
-
 
 
 
