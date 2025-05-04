@@ -1,6 +1,15 @@
 body {
     margin: 8px;
     font-family: sans-serif;
+    padding: 20px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #282828;
+    padding: 10px 16px;
+    background-color: #3acf51;
+    border-radius: 12px;
 }
 
 .output {

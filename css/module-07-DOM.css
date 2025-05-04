@@ -1,9 +1,15 @@
-/* body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #282828;
+    padding: 10px 16px;
+    background-color: #3acf51;
+    border-radius: 12px;
+}
 
 .form {
     max-width: 600px;

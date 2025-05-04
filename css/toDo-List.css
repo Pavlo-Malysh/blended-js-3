@@ -1,14 +1,12 @@
-* common */ * {
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
-
 body {
-    background-color: #fff;
-    color: #333;
-    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
-    padding: 20px;
     margin: 0;
+    padding: 20px;
 }
 
 .back-link {
@@ -17,4 +15,9 @@ body {
     padding: 10px 16px;
     background-color: #3acf51;
     border-radius: 12px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
 }
